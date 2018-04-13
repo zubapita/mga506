@@ -1,0 +1,758 @@
+# English translations for groonga storage engine package.
+# Copyright (C) 2009-2011, groonga project
+# This file is distributed under the same license as the groonga storage engine package.
+# Kouhei Sutou <kou@clear-code.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: groonga storage engine 1.0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-11-03 17:56\n"
+"PO-Revision-Date: 2011-11-03 17:57+0900\n"
+"Last-Translator: Kouhei Sutou <kou@clear-code.com>\n"
+"Language-Team: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# a0c096408cca4734a540eca7408ae9f4
+#: ../../../source/news.rst:4
+msgid "News"
+msgstr "News"
+
+# ec49610ff0d445c8870b64d923b8997d
+#: ../../../source/news.rst:9
+msgid "Release 1.0.1 - 2011/10/29"
+msgstr "Release 1.0.1 - 2011/10/29"
+
+# 2791f8f5b297420c8c794aaf8bc689bf
+#: ../../../source/news.rst:11
+msgid ""
+"The important changes in this release are the enhancement of geolocation "
+"search and the improvement of dynamic index modification in storage mode."
+msgstr ""
+"The important changes in this release are the enhancement of geolocation "
+"search and the improvement of dynamic index modification in storage mode."
+
+# 95494fd77e4d4ec4a4d8518e62b9b557
+#: ../../../source/news.rst:14
+msgid "Improvements"
+msgstr "Improvements"
+
+# 771142852a944d1f9ba6d94a3d496e91
+#: ../../../source/news.rst:16
+msgid ""
+"[storage mode][wrapper mode] support reopening a database by `flush tables`."
+msgstr ""
+"[storage mode][wrapper mode] support reopening a database by `flush tables`."
+
+# 633c8f85719446a0b92628b6f9508e1c
+#: ../../../source/news.rst:17
+msgid ""
+"[wrapper mode] support geolocation index. (Only Point type can be stored in "
+"a column. Search using index is only available for MBRContains)."
+msgstr ""
+"[wrapper mode] support geolocation index. (Only Point type can be stored in "
+"a column. Search using index is only available for MBRContains)."
+
+# f8a443cdbfb74ad39ad50aade0b22fb3
+#: ../../../source/news.rst:18
+msgid ""
+"[benchmark] add `groonga_dry_write` variable to specify not to write to "
+"groonga database, that is useful to check bottle necks in benchmarks."
+msgstr ""
+"[benchmark] add `groonga_dry_write` variable to specify not to write to "
+"groonga database, that is useful to check bottle necks in benchmarks."
+
+# 7c963acd055d4811ac5bca0dcb6f392c
+#: ../../../source/news.rst:19
+msgid ""
+"mention MySQL version in the installation guide for CentOS 6. [proposed by "
+"@yoshi_ken]"
+msgstr ""
+"mention MySQL version in the installation guide for CentOS 6. [proposed by "
+"@yoshi_ken]"
+
+# 153d2368ea624f12b878862f7bb7219c
+#: ../../../source/news.rst:20
+msgid "[geolocation] improve performance by skip needless processes."
+msgstr "[geolocation] improve performance by skip needless processes."
+
+# 6825a48008fd4cff85e497334db2243e
+#: ../../../source/news.rst:21
+msgid ""
+"add  `--disable-fast-mutexes` configure option to ignore fast mutexes even "
+"if mysql_config says it is enabled."
+msgstr ""
+"add  `--disable-fast-mutexes` configure option to ignore fast mutexes even "
+"if mysql_config says it is enabled."
+
+# 3470fadbc0df4faab7fd20d619a5c9c8
+#: ../../../source/news.rst:22
+msgid "[storage mode] support `create index`."
+msgstr "[storage mode] support `create index`."
+
+# f9d13803f7dc47818cc07aa1f9d54679
+#: ../../../source/news.rst:23
+msgid "[storage mode] support `drop index`."
+msgstr "[storage mode] support `drop index`."
+
+# 862e6cc2459d4f56af4047e41f017e14
+#: ../../../source/news.rst:24
+msgid "[storage mode] support multi columns index for full text search."
+msgstr "[storage mode] support multi columns index for full text search."
+
+# 6d938463a6f144b489551530793bc942
+#: ../../../source/news.rst:25
+msgid "support `D` pragma."
+msgstr "support `D` pragma."
+
+# 19e201e605f64d09ba23f9be0a9d7674
+#: ../../../source/news.rst:26
+msgid "support MySQL 5.5.17."
+msgstr "support MySQL 5.5.17."
+
+# f1b1dbde64be46ab9d3c7b46701e2fba
+#: ../../../source/news.rst:27
+msgid "support MySQL 5.6.3-m6."
+msgstr "support MySQL 5.6.3-m6."
+
+# 92e8ff5c8f864bdc80901983d1df1f3a
+#: ../../../source/news.rst:28
+msgid "support groonga 1.2.7. (1.2.6 or below are no longer supported)."
+msgstr "support groonga 1.2.7. (1.2.6 or below are no longer supported)."
+
+# b48d53cb285d4d45baef3eb00a77db3d
+#: ../../../source/news.rst:29
+msgid "support Ubuntu 11.10 Oneiric Ocelot."
+msgstr "support Ubuntu 11.10 Oneiric Ocelot."
+
+# 52963dbb41db4a1f8990a3e08b9a46b7
+#: ../../../source/news.rst:32
+msgid "Fixes"
+msgstr "Fixes"
+
+# ed737dceecea460c99a480475194638e
+#: ../../../source/news.rst:34
+msgid ""
+"fix a bug that we have no results if we specify '+' at the beginning of the "
+"query in boolean mode. [reported by Hajime Nishiyama]"
+msgstr ""
+"fix a bug that we have no results if we specify '+' at the beginning of the "
+"query in boolean mode. [reported by Hajime Nishiyama]"
+
+# de17eaf4907346c080c743737b718205
+#: ../../../source/news.rst:35
+msgid "[Fedora] fix package dependencies. [reported by Takahiro Nagai]"
+msgstr "[Fedora] fix package dependencies. [reported by Takahiro Nagai]"
+
+# a32bf5d72b5b4bbe99d47cf66d43a528
+#: ../../../source/news.rst:36
+msgid ""
+"[Fedora] fix a problem that we get undefined symbol error when the plugin is "
+"loaded. [reported by Takahiro Nagai]"
+msgstr ""
+"[Fedora] fix a problem that we get undefined symbol error when the plugin is "
+"loaded. [reported by Takahiro Nagai]"
+
+# 2b8d8fef8d0d430b958596e7db0f1462
+#: ../../../source/news.rst:37
+msgid ""
+"[storage mode] fix a bug that index will not be correctly created if "
+"`varchar` is used in a multi-column index. #1143 [reported by Takahiro Nagai]"
+msgstr ""
+"[storage mode] fix a bug that index will not be correctly created if "
+"`varchar` is used in a multi-column index. #1143 [reported by Takahiro Nagai]"
+
+# 5fed27d0e41f45a7ba91d23bce6867c3
+#: ../../../source/news.rst:40
+msgid "Thanks"
+msgstr "Thanks"
+
+# b2280cb134284ac5b40e0ee3eb4d3582
+#: ../../../source/news.rst:42
+msgid "@yoshi_ken"
+msgstr "@yoshi_ken"
+
+# a4c77e7c2a5a45859a66f05d1c6faf36
+#: ../../../source/news.rst:43
+msgid "Hajime Nishiyama"
+msgstr "Hajime Nishiyama"
+
+# d20c5e983fa840b3a4a0b4a64cc48a63
+#: ../../../source/news.rst:44
+msgid "Takahiro Nagai"
+msgstr "Takahiro Nagai"
+
+# 93e3c746026649c6a764781e53e897a0
+#: ../../../source/news.rst:49
+msgid "1.0.0 リリース - 2011/09/29"
+msgstr "1.0.0 リリース - 2011/09/29"
+
+# ccc8fd0481e3431bb0e8721705cb69b0
+#: ../../../source/news.rst:51
+msgid "初回リリースから約1年経って、初のメジャーリリース！"
+msgstr "初回リリースから約1年経って、初のメジャーリリース！"
+
+# 8c1174024ba14d58ba55512a986553bf
+# c3319daced48485881fa2e9f180946ff
+# 25b65638b0b149348b266602fe03b968
+# a1c6e6a11d6745a0b880707dca140e8b
+# 10cfbe4689ce45c793c40882821f3cfc
+# cd49c0eca708421795251e7b982fac20
+# a1272c26ee8740159d1d310252c15a5e
+# 0acd9c5918b945769d4446aab6ba9802
+# 8cfb08c175d74452933e9df9f632664a
+#: ../../../source/news.rst:54 ../../../source/news/0.x.rst:12
+#: ../../../source/news/0.x.rst:23 ../../../source/news/0.x.rst:36
+#: ../../../source/news/0.x.rst:60 ../../../source/news/0.x.rst:91
+#: ../../../source/news/0.x.rst:108 ../../../source/news/0.x.rst:130
+#: ../../../source/news/0.x.rst:152
+msgid "改良"
+msgstr "改良"
+
+# d209e4a1cae24f43ba4d118ec67f190d
+#: ../../../source/news.rst:56
+msgid "[ラッパーモード] drop index対応。 #1040"
+msgstr "[ラッパーモード] drop index対応。 #1040"
+
+# 6430b4b06d6f4c308310f7da7d3e360c
+#: ../../../source/news.rst:57
+msgid ""
+"[ストレージモード] GEOMETRY対応。（ただし、カラムに保存できる型はPointのみ対"
+"応。インデックスを利用した位置検索はMBRContainsのみ対応。） #1041"
+msgstr ""
+"[ストレージモード] GEOMETRY対応。（ただし、カラムに保存できる型はPointのみ対"
+"応。インデックスを利用した位置検索はMBRContainsのみ対応。） #1041"
+
+# 6e5e2eb24d834a4a84bac42f3cfb879e
+#: ../../../source/news.rst:58
+msgid "[ストレージモード] マルチカラムインデックスに対応。 #455"
+msgstr "[ストレージモード] マルチカラムインデックスに対応。 #455"
+
+# 67f202ddcbb143bcba9e72e4f7c0f562
+#: ../../../source/news.rst:59
+msgid ""
+"[ストレージモード][ラッパーモード] 全文検索用パーサー（トークナイザー）のカス"
+"タマイズに対応。 #592"
+msgstr ""
+"[ストレージモード][ラッパーモード] 全文検索用パーサー（トークナイザー）のカス"
+"タマイズに対応。 #592"
+
+# 0c8bd732010c43ad90c9eaa05af7a98a
+#: ../../../source/news.rst:60
+msgid ""
+"configureにデフォルトの全文検索用パーサーを指定する `--with-default-parser` "
+"オプションを追加。"
+msgstr ""
+"configureにデフォルトの全文検索用パーサーを指定する `--with-default-parser` "
+"オプションを追加。"
+
+# 3be4fbfd1af143f2abdb91f7abfee168
+#: ../../../source/news.rst:61
+msgid ""
+"実行時にデフォルトの全文検索用パーサーを指定する `groonga_default_parser` 変"
+"数を追加。"
+msgstr ""
+"実行時にデフォルトの全文検索用パーサーを指定する `groonga_default_parser` 変"
+"数を追加。"
+
+# afb70c7a51e14d9197b0b9ddae6a8c24
+#: ../../../source/news.rst:62
+msgid ""
+"[ラッパーモード] ストレージモードで実装している `order` と `limit` が指定され"
+"た場合に必要のないレコードを返さないようにする高速化に対応。"
+msgstr ""
+"[ラッパーモード] ストレージモードで実装している `order` と `limit` が指定され"
+"た場合に必要のないレコードを返さないようにする高速化に対応。"
+
+# 1870400d78364f089aa2b2141ac197c0
+#: ../../../source/news.rst:63
+msgid ""
+"[ストレージモード] 1つの `select` 中での複数の `match against` 指定に対応。"
+msgstr ""
+"[ストレージモード] 1つの `select` 中での複数の `match against` 指定に対応。"
+
+# b9e3884e80cd4a9887a08990aaf9ca8e
+#: ../../../source/news.rst:64
+msgid ""
+"[非互換][ストレージモード] `_score` カラムの削除。代わりにMySQL標準の書き方で"
+"ある `match against` を使ってください。"
+msgstr ""
+"[非互換][ストレージモード] `_score` カラムの削除。代わりにMySQL標準の書き方で"
+"ある `match against` を使ってください。"
+
+# 2b37718de9d4484687e75b43bf73153c
+#: ../../../source/news.rst:65
+msgid "[ラッパーモード] プライマリキーの更新に対応。"
+msgstr "[ラッパーモード] プライマリキーの更新に対応。"
+
+# fb59675ba0e6487fa8f3b9b06fceee6b
+#: ../../../source/news.rst:66
+msgid "MySQL 5.5.16に対応。"
+msgstr "MySQL 5.5.16に対応。"
+
+# c7e41aeba6184ec68106d5e952edf2f2
+#: ../../../source/news.rst:67
+msgid "CentOS 6に対応。"
+msgstr "CentOS 6に対応。"
+
+# f0c35468f4c14af1ada3050060fb9283
+#: ../../../source/news.rst:68
+msgid "groonga 1.2.6に対応。（1.2.5以下のサポートを削除。）"
+msgstr "groonga 1.2.6に対応。（1.2.5以下のサポートを削除。）"
+
+# a3047e48b1d243dca6919ad82fd6821e
+# 2bae32f94e68406d9a1775c5d24a69fa
+# fdbd79908b274a33a734fe6995df5344
+# 1ecc0ce204944371bca7c7da090a2e52
+# 99813bf936dd4baab9866bbdeea8677a
+#: ../../../source/news.rst:71 ../../../source/news/0.x.rst:44
+#: ../../../source/news/0.x.rst:73 ../../../source/news/0.x.rst:144
+#: ../../../source/news/0.x.rst:165
+msgid "修正"
+msgstr "修正"
+
+# ae5b15593c2e4647a62c791a3d8266db
+#: ../../../source/news.rst:73
+msgid ""
+"[Ubuntu] Lucid上でインストールエラーが発生する問題を修正。 （Isao Sugimotoさ"
+"んが報告）"
+msgstr ""
+"[Ubuntu] Lucid上でインストールエラーが発生する問題を修正。 （Isao Sugimotoさ"
+"んが報告）"
+
+# 9b08030dccc842da84ea2afa5ccd3a76
+#: ../../../source/news.rst:74
+msgid ""
+"auto_incrementを使った場合にテキストデータが壊れる問題を修正。 "
+"（@zaubermaerchenさんが報告） #1072"
+msgstr ""
+"auto_incrementを使った場合にテキストデータが壊れる問題を修正。 "
+"（@zaubermaerchenさんが報告） #1072"
+
+# 28fd5fb5ec714c0299a9bd9924d99222
+#: ../../../source/news.rst:75
+msgid ""
+"[Ubuntu] Lucid上でテーブルを削除するとクラッシュする問題を修正。 #1063 "
+"（Isao Sugimotoさんが報告）"
+msgstr ""
+"[Ubuntu] Lucid上でテーブルを削除するとクラッシュする問題を修正。 #1063 "
+"（Isao Sugimotoさんが報告）"
+
+# 13c45ac59b574761a959ed3ee2554331
+#: ../../../source/news.rst:76
+msgid ""
+"MySQLと同じビルドオプションを使っていなかった問題を修正。 GitHub#4 (groongaの"
+"GitHubのIssues) （Tomohiro MITSUMUNEさんが報告）"
+msgstr ""
+"MySQLと同じビルドオプションを使っていなかった問題を修正。 GitHub#4 (groongaの"
+"GitHubのIssues) （Tomohiro MITSUMUNEさんが報告）"
+
+# b42d79a8ebe940ecbb4dd1bfebc28eed
+# 3e12c94bf50a49f08547802e558e448d
+# 325c484683a6405d82f29de03d879e32
+# 811358264a864de5bcba489bedd3f641
+# bacfa059e6344332808a754c9ea5634c
+# ee57149a8114424baa743560733f91f9
+#: ../../../source/news.rst:79 ../../../source/news/0.x.rst:49
+#: ../../../source/news/0.x.rst:81 ../../../source/news/0.x.rst:100
+#: ../../../source/news/0.x.rst:122 ../../../source/news/0.x.rst:171
+msgid "感謝"
+msgstr "感謝"
+
+# 53be7c7fdd184ee69628b717c9172664
+#: ../../../source/news.rst:81
+msgid "Isao Sugimotoさん"
+msgstr "Isao Sugimotoさん"
+
+# 1738e67875da44b091e4883124577ae4
+#: ../../../source/news.rst:82
+msgid "@zaubermaerchenさん"
+msgstr "@zaubermaerchenさん"
+
+# 9fba6db7ba66497e956365b6dda27893
+#: ../../../source/news.rst:83
+msgid "Tomohiro MITSUMUNEさん"
+msgstr "Tomohiro MITSUMUNEさん"
+
+# a681cedd8ba5431385e6435d77ce51aa
+#: ../../../source/news.rst:86
+msgid "Past releases"
+msgstr "Past releases"
+
+# b74305a034b24c1ba13b86c8808837e7
+#: ../../../source/news/0.x.rst:4
+msgid "バージョン0.xのお知らせ"
+msgstr "バージョン0.xのお知らせ"
+
+# 36ec64d12a9441f18abc7bcbd86598f4
+#: ../../../source/news/0.x.rst:9
+msgid "0.9 リリース - 2011/08/29"
+msgstr "0.9 リリース - 2011/08/29"
+
+# 259495185f9a498c9fdb95d90ddb746c
+#: ../../../source/news/0.x.rst:14
+msgid "MySQL 5.1.58に対応。"
+msgstr "MySQL 5.1.58に対応。"
+
+# 6b6c988dba3342ca80cbe66747cc5ae9
+#: ../../../source/news/0.x.rst:15
+msgid "MySQL 5.6.3に対応。"
+msgstr "MySQL 5.6.3に対応。"
+
+# d54ffec2e7c24725a1b12b15cf24cff6
+#: ../../../source/news/0.x.rst:20
+msgid "0.8 リリース - 2011/07/29"
+msgstr "0.8 リリース - 2011/07/29"
+
+# 826c59792f7a45e78295a900add347a7
+#: ../../../source/news/0.x.rst:25
+msgid "[deb] プラグインインストール時のエラーを無視するようにした。"
+msgstr "[deb] プラグインインストール時のエラーを無視するようにした。"
+
+# 8c603db88aef40cbbbb938e8c01724c8
+#: ../../../source/news/0.x.rst:26
+msgid "[ラッパーモード] マルチカラムインデックスのサポート。 #1031"
+msgstr "[ラッパーモード] マルチカラムインデックスのサポート。 #1031"
+
+# eb71ca45272a4dbe8081b301206fdf3f
+#: ../../../source/news/0.x.rst:27
+msgid "[ラッパーモード] 大量レコードの全文検索に対応。 #1032"
+msgstr "[ラッパーモード] 大量レコードの全文検索に対応。 #1032"
+
+# 1e3f84a48d6e461cbfc53e0c48464b55
+#: ../../../source/news/0.x.rst:28
+msgid "[ラッパーモード] MyISAM対応。 #1033"
+msgstr "[ラッパーモード] MyISAM対応。 #1033"
+
+# 01921fb333894ad68719596016a40952
+#: ../../../source/news/0.x.rst:33
+msgid "0.7 リリース - 2011/06/29"
+msgstr "0.7 リリース - 2011/06/29"
+
+# 8cd9aa31d4fc44e98071b7a3f32d08e3
+#: ../../../source/news/0.x.rst:38
+msgid ""
+"既存のストレージエンジンに全文検索機能を追加する :doc:`userguide/wrapper` の"
+"追加。"
+msgstr ""
+"既存のストレージエンジンに全文検索機能を追加する :doc:`userguide/wrapper` の"
+"追加。"
+
+# 6943703a8b334fe4ab7ccd6f33cf5630
+#: ../../../source/news/0.x.rst:39
+msgid "MySQL 5.5.13サポートの追加。 #984"
+msgstr "MySQL 5.5.13サポートの追加。 #984"
+
+# ceb2c20bec2f492ab8402c9fdd8e560b
+#: ../../../source/news/0.x.rst:40
+msgid "安定してきたので、groongaのデフォルトログレベルをDUMPからNOTICEに変更。"
+msgstr ""
+"安定してきたので、groongaのデフォルトログレベルをDUMPからNOTICEに変更。"
+
+# 34400f25607c49a08b16fa23aa0c4509
+#: ../../../source/news/0.x.rst:41
+msgid "Mac OS Xでのビルドをサポート。（@issmさんが報告）"
+msgstr "Mac OS Xでのビルドをサポート。（@issmさんが報告）"
+
+# 9f3f62a557364a29968d9103a1bfd6b7
+#: ../../../source/news/0.x.rst:46
+msgid "常にデバッグモードでビルドされる問題を修正。（@supistarさんが報告）"
+msgstr "常にデバッグモードでビルドされる問題を修正。（@supistarさんが報告）"
+
+# af84daadf88a4cee949f0fbaf956e6be
+#: ../../../source/news/0.x.rst:51
+msgid "@issmさん"
+msgstr "@issmさん"
+
+# b85ee653b33f4d7ba170f45bb41aa2b1
+#: ../../../source/news/0.x.rst:52
+msgid "@supistarさん"
+msgstr "@supistarさん"
+
+# 1f4efab1c4064badbe872393297a0f20
+#: ../../../source/news/0.x.rst:57
+msgid "0.6 リリース - 2011/05/29"
+msgstr "0.6 リリース - 2011/05/29"
+
+# fe542ee94a904077b6c6e74c77e55d0d
+#: ../../../source/news/0.x.rst:62
+msgid "auto_increment機能の追加。#670"
+msgstr "auto_increment機能の追加。#670"
+
+# 38793ca9cc99425db0fa114e160dc759
+#: ../../../source/news/0.x.rst:63
+msgid ""
+"不必要な\"duplicated _id on insert\"というエラーメッセージを 抑制。 #910（←は"
+"未修正）"
+msgstr ""
+"不必要な\"duplicated _id on insert\"というエラーメッセージを 抑制。 #910（←は"
+"未修正）"
+
+# 6a94b4e42fa24f78b1f589514d4618ea
+#: ../../../source/news/0.x.rst:65
+msgid ""
+"CentOSで利用しているMySQLのバージョンを5.5.10から5.5.12へ アップデート。"
+msgstr ""
+"CentOSで利用しているMySQLのバージョンを5.5.10から5.5.12へ アップデート。"
+
+# cae39b841d34452c8c9b18e5ffa5183f
+#: ../../../source/news/0.x.rst:67
+msgid "Ubuntu 11.04 Natty Narwhalサポートの追加。"
+msgstr "Ubuntu 11.04 Natty Narwhalサポートの追加。"
+
+# d8542d2505a24480b66ae2f55d3a2209
+#: ../../../source/news/0.x.rst:68
+msgid "Ubuntu 10.10 Maverick Meerkatサポートの削除。"
+msgstr "Ubuntu 10.10 Maverick Meerkatサポートの削除。"
+
+# 7d07efdfd6ac4614a4ab14d1a6af2749
+#: ../../../source/news/0.x.rst:69
+msgid "Fedora 15サポートの追加。"
+msgstr "Fedora 15サポートの追加。"
+
+# 97b8a11b74544015a65ff89b0b6139f4
+#: ../../../source/news/0.x.rst:70
+msgid "Fedora 14サポートの削除。"
+msgstr "Fedora 14サポートの削除。"
+
+# b84cb7113fa64d11a51f45377beddfcc
+#: ../../../source/news/0.x.rst:75
+msgid "ORDER BY LIMITの高速化が機能しないケースがある問題の修正。#845"
+msgstr "ORDER BY LIMITの高速化が機能しないケースがある問題の修正。#845"
+
+# 37ac60bf612a467bbd22d49e6e07a439
+#: ../../../source/news/0.x.rst:76
+msgid "デバッグビルド時のメモリリークを修正。"
+msgstr "デバッグビルド時のメモリリークを修正。"
+
+# 9354d1575fc44d9ca33f37405ee30dd5
+#: ../../../source/news/0.x.rst:77
+msgid ""
+"提供しているCentOS用パッケージをOracle提供MySQLパッケージ と一緒に使うとク"
+"ラッシュする問題を修正。"
+msgstr ""
+"提供しているCentOS用パッケージをOracle提供MySQLパッケージ と一緒に使うとク"
+"ラッシュする問題を修正。"
+
+# a34d1f737cf94456ab252ed45fc0e9bc
+#: ../../../source/news/0.x.rst:83
+msgid "Mitsuhiro Shibuyaさん"
+msgstr "Mitsuhiro Shibuyaさん"
+
+# 908dfc81fd6245a8868bb24b35aae486
+#: ../../../source/news/0.x.rst:84
+msgid "Hiroki Minetaさん"
+msgstr "Hiroki Minetaさん"
+
+# 55bab6fbe00740dc91146b63f9bf5a99
+#: ../../../source/news/0.x.rst:85
+msgid "@kodakaさん"
+msgstr "@kodakaさん"
+
+# 27f0922946e84c0fac99f97a98fc088c
+#: ../../../source/news/0.x.rst:88
+msgid "0.5 リリース - 2011/03/29"
+msgstr "0.5 リリース - 2011/03/29"
+
+# ffc02dbcc1754ef7a4dafaae93bfd4c5
+#: ../../../source/news/0.x.rst:93
+msgid "\"uninstall plugin\"対応 #741"
+msgstr "\"uninstall plugin\"対応 #741"
+
+# a045519e21bf41c193da0e54084ba9d0
+#: ../../../source/news/0.x.rst:94
+msgid "MariaDB対応 （かずひこさんが提案）"
+msgstr "MariaDB対応 （かずひこさんが提案）"
+
+# e6039c7042124f45a5f24625f2c6b2d7
+#: ../../../source/news/0.x.rst:95
+msgid "不要なデバッグシンボルを削除"
+msgstr "不要なデバッグシンボルを削除"
+
+# e8d8ec14fd2647a9a6bf08f8cadbe90d
+#: ../../../source/news/0.x.rst:96
+msgid "MySQL 5.5への対応強化。"
+msgstr "MySQL 5.5への対応強化。"
+
+# 58336f5e114d4c2bbc9e33ea550e669b
+#: ../../../source/news/0.x.rst:97
+msgid "エラーメッセージの改良"
+msgstr "エラーメッセージの改良"
+
+# c0680feaefcf48ec8563714b5cfd1f55
+#: ../../../source/news/0.x.rst:102
+msgid "かずひこさん"
+msgstr "かずひこさん"
+
+# 77be6f98e0d04e91bb164fc3c985f9a8
+#: ../../../source/news/0.x.rst:105
+msgid "0.4 リリース - 2010/11/29"
+msgstr "0.4 リリース - 2010/11/29"
+
+# 734721db6dcd49909b62b3236a5f5939
+#: ../../../source/news/0.x.rst:110
+msgid "全文検索のスコア取得機能の追加。"
+msgstr "全文検索のスコア取得機能の追加。"
+
+# 9544ea2d6012417a8c8a2bffac87d11a
+#: ../../../source/news/0.x.rst:111
+msgid "レコードIDへのアクセス機能の追加。"
+msgstr "レコードIDへのアクセス機能の追加。"
+
+# c427125059d5411ea679666733919927
+#: ../../../source/news/0.x.rst:112
+msgid "直近のレコードIDを参照するためのUDFの追加。"
+msgstr "直近のレコードIDを参照するためのUDFの追加。"
+
+# 1ca96372bcae4801ba579fa6099fd0b2
+#: ../../../source/news/0.x.rst:113
+msgid "インデックスによる範囲検索機能の追加。"
+msgstr "インデックスによる範囲検索機能の追加。"
+
+# 6b2b065ca1194003b71e78fddbaedac8
+#: ../../../source/news/0.x.rst:114
+msgid "全文検索におけるORDER BY LIMITパタンの高速化。"
+msgstr "全文検索におけるORDER BY LIMITパタンの高速化。"
+
+# e2ad4fcbf12a40f18801374201f12a60
+#: ../../../source/news/0.x.rst:115
+msgid "``groonga_fast_order_limit`` ステータス変数の追加。"
+msgstr "``groonga_fast_order_limit`` ステータス変数の追加。"
+
+# dc5be53cdd3e4be1b21a2b07f5a5c11d
+#: ../../../source/news/0.x.rst:116
+msgid "ログ出力機能の設定強化。"
+msgstr "ログ出力機能の設定強化。"
+
+# f87d46dd482d45fbab49abe0074e5be4
+#: ../../../source/news/0.x.rst:117
+msgid "``groonga_log_level`` システム変数の追加。"
+msgstr "``groonga_log_level`` システム変数の追加。"
+
+# 5250581436aa4db8aa5c8a9a2901d241
+#: ../../../source/news/0.x.rst:118
+msgid "全文検索機能の強化(NOT MATCH AGAINST対応)。"
+msgstr "全文検索機能の強化(NOT MATCH AGAINST対応)。"
+
+# 8325e399884647649ddb3f9ddca60478
+#: ../../../source/news/0.x.rst:119
+msgid "MySQL 5.5への対応。"
+msgstr "MySQL 5.5への対応。"
+
+# 2370fd0c8cf746898ea08bf3a180fbaa
+# f97670df9a64490180090c0a9fa677c1
+#: ../../../source/news/0.x.rst:124 ../../../source/news/0.x.rst:173
+msgid "とみたまさひろさん"
+msgstr "とみたまさひろさん"
+
+# df19b77bdb42440cbad8e8f889466371
+#: ../../../source/news/0.x.rst:127
+msgid "0.3 リリース - 2010/10/29"
+msgstr "0.3 リリース - 2010/10/29"
+
+# a04be6f3fc744b0ea36efb400a6e15c5
+#: ../../../source/news/0.x.rst:132
+msgid "エラーメッセージの出力を実装。"
+msgstr "エラーメッセージの出力を実装。"
+
+# 0cdecb972919484c875d685c6c1ed57a
+#: ../../../source/news/0.x.rst:133
+msgid "カラムの刈り込みの実装を強化。"
+msgstr "カラムの刈り込みの実装を強化。"
+
+# 58f9dbb0382f4dbba10c6a9c1efcbcbb
+#: ../../../source/news/0.x.rst:134
+msgid "行カウント高速化機能の実装。"
+msgstr "行カウント高速化機能の実装。"
+
+# ee9f0e4a125b4a3ca8ffedcf6e090fbf
+#: ../../../source/news/0.x.rst:135
+msgid "``groonga_count_skip`` ステータス変数の追加。"
+msgstr "``groonga_count_skip`` ステータス変数の追加。"
+
+# 726614e73b6c44d696ef4c5a21a1060e
+#: ../../../source/news/0.x.rst:136
+msgid "ユーザガイドドキュメントの追加。"
+msgstr "ユーザガイドドキュメントの追加。"
+
+# fad08b44e4484293b549b16e16a4d304
+# d4ce902a891c48d1b7fb5b6fe314cec5
+#: ../../../source/news/0.x.rst:139 ../../../source/news/0.x.rst:158
+msgid "変更"
+msgstr "変更"
+
+# 4ec5de971b5240e4a882a893fb54341e
+#: ../../../source/news/0.x.rst:141
+msgid "インデックス作成時にNORMALIZEフラグを付与。"
+msgstr "インデックス作成時にNORMALIZEフラグを付与。"
+
+# 470946e764164067b19ed1661df3f42c
+#: ../../../source/news/0.x.rst:146
+msgid "LIMITなどを用いた場合にカーソルが正しくクローズされない問題の修正。"
+msgstr "LIMITなどを用いた場合にカーソルが正しくクローズされない問題の修正。"
+
+# 6b3a6da53b4a49ceb7a4bbe6317ea272
+#: ../../../source/news/0.x.rst:149
+msgid "0.2 リリース - 2010/09/29"
+msgstr "0.2 リリース - 2010/09/29"
+
+# 099846829d1444e0a384c844704c1435
+#: ../../../source/news/0.x.rst:154
+msgid ""
+"packages.groonga.orgでのバイナリパッケージ配布開始。aptitude/yumによるインス"
+"トールが可能に。"
+msgstr ""
+"packages.groonga.orgでのバイナリパッケージ配布開始。aptitude/yumによるインス"
+"トールが可能に。"
+
+# eea19113464249be85bfaf6e90da3465
+#: ../../../source/news/0.x.rst:155
+msgid "バイナリログの出力に対応。"
+msgstr "バイナリログの出力に対応。"
+
+# 86c4f9b02d0e4a7a9314565015e362de
+#: ../../../source/news/0.x.rst:160
+msgid ""
+"共有ライブラリの名前を\"libgroonga_storage_engine.so\"から\"ha_groonga.so\"に"
+"変更。"
+msgstr ""
+"共有ライブラリの名前を\"libgroonga_storage_engine.so\"から\"ha_groonga.so\"に"
+"変更。"
+
+# 22a6572ea2b64734aa42bf1ed0bdfadf
+#: ../../../source/news/0.x.rst:161
+msgid "configureオプションの ``--with-mysql`` および ``--libdir`` を削除。"
+msgstr "configureオプションの ``--with-mysql`` および ``--libdir`` を削除。"
+
+# a5d9a0ecd31b4054a8efb8aae9dea159
+#: ../../../source/news/0.x.rst:162
+msgid ""
+"configureオプションの ``--with-mysql-source`` および ``--with-mysql-config`` "
+"を追加。"
+msgstr ""
+"configureオプションの ``--with-mysql-source`` および ``--with-mysql-config`` "
+"を追加。"
+
+# 2758df696eee4ca49359e0f3e6df98e6
+#: ../../../source/news/0.x.rst:167
+msgid "ヘッダファイルのincludeパスを修正。"
+msgstr "ヘッダファイルのincludeパスを修正。"
+
+# bae7794e1f074000b54bdb65090a96bf
+#: ../../../source/news/0.x.rst:168
+msgid "\"SHOW CREATE TABLE\"に出力されるENGINE名を修正。"
+msgstr "\"SHOW CREATE TABLE\"に出力されるENGINE名を修正。"
+
+# cccbdd88aa6c40b29fe4b5ec6af6a093
+#: ../../../source/news/0.x.rst:177
+msgid "0.1 リリース - 2010/08/19"
+msgstr "0.1 リリース - 2010/08/19"
+
+# 0b34213d058347458536c647a9ff8558
+#: ../../../source/news/0.x.rst:179
+msgid "初回テストリリース"
+msgstr "初回テストリリース"

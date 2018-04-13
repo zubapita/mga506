@@ -1,0 +1,8 @@
+debhelper
+autotools-dev
+libgroonga-dev
+pkg-config
+libmecab-dev
+mecab-utils
+libmysqlclient-dev
+libssl-dev
